@@ -1,0 +1,2599 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='FiX_PLIS_GTL' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='chinook_salesmart' inline='true' name='federated.1c05od61qqttsj17ryebc1rp2iru' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='chinook_salesmart' name='textscan.0op5h9k1k0u38z15hw3yr147udmi'>
+            <connection class='textscan' directory='C:/KULIAH/SEMESTER5/STUPEN/Tugas/TugasAkhir' filename='chinook_salesmart.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0op5h9k1k0u38z15hw3yr147udmi' name='chinook_salesmart.csv' table='[chinook_salesmart#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='id_ID' separator=';'>
+            <column datatype='integer' name='transaksi_id' ordinal='0' />
+            <column datatype='integer' name='invoice_line_id' ordinal='1' />
+            <column datatype='integer' name='invoice_id' ordinal='2' />
+            <column datatype='integer' name='sk_track' ordinal='3' />
+            <column datatype='string' name='album_title' ordinal='4' />
+            <column datatype='string' name='artist_name' ordinal='5' />
+            <column datatype='string' name='genre_name' ordinal='6' />
+            <column datatype='string' name='media_name' ordinal='7' />
+            <column datatype='date' name='sk_trackdate' ordinal='8' />
+            <column datatype='string' name='kuartal' ordinal='9' />
+            <column datatype='string' name='tanggal' ordinal='10' />
+            <column datatype='string' name='bulan' ordinal='11' />
+            <column datatype='integer' name='tahun_angka' ordinal='12' />
+            <column datatype='integer' name='hari_dalam_bulan_angka' ordinal='13' />
+            <column datatype='integer' name='sk_employee' ordinal='14' />
+            <column datatype='string' name='employee_name' ordinal='15' />
+            <column datatype='integer' name='sk_customer' ordinal='16' />
+            <column datatype='string' name='customer_name' ordinal='17' />
+            <column datatype='string' name='unit_price' ordinal='18' />
+            <column datatype='integer' name='quantity' ordinal='19' />
+            <column datatype='string' name='totalrevenue' ordinal='20' />
+            <column datatype='string' name='billing_country' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;id_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaksi_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transaksi_id]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>transaksi_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>invoice_line_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[invoice_line_id]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>invoice_line_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>invoice_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[invoice_id]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>invoice_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sk_track</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sk_track]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>sk_track</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>album_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[album_title]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>album_title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist_name]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>artist_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre_name]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>genre_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>media_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[media_name]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>media_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sk_trackdate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[sk_trackdate]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>sk_trackdate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kuartal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kuartal]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>kuartal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tanggal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tanggal]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>tanggal</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bulan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bulan]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>bulan</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tahun_angka</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tahun_angka]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>tahun_angka</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hari_dalam_bulan_angka</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hari_dalam_bulan_angka]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>hari_dalam_bulan_angka</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sk_employee</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sk_employee]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>sk_employee</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employee_name]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>employee_name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sk_customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sk_customer]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>sk_customer</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_name]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit_price</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[unit_price]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>unit_price</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalrevenue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[totalrevenue]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>totalrevenue</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>billing_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[billing_country]</local-name>
+            <parent-name>[chinook_salesmart.csv]</parent-name>
+            <remote-alias>billing_country</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([totalrevenue])' />
+      </column>
+      <column caption='Total Track Sold ' datatype='integer' name='[Calculation_531987722138017793]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([quantity])' />
+      </column>
+      <column caption='zero' datatype='integer' name='[Calculation_531987722139418626]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='chinook_salesmart.csv' datatype='table' name='[__tableau_internal_object_id__].[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]' role='measure' type='quantitative' />
+      <column datatype='string' name='[billing_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[invoice_id]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[invoice_line_id]' role='dimension' type='ordinal' />
+      <column datatype='date' name='[sk_trackdate]' role='dimension' type='quantitative' />
+      <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[transaksi_id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0iwquu103dxxru11sldz401f1hnz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/12/2025 02:35:57 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>transaksi_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[transaksi_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaksi_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2240</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>invoice_line_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[invoice_line_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>invoice_line_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2240</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>invoice_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[invoice_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>invoice_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>398</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sk_track</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sk_track]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sk_track</remote-alias>
+              <ordinal>3</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1506</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>album_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[album_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>album_title</remote-alias>
+              <ordinal>4</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>290</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>artist_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[artist_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>artist_name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>153</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genre_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>media_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[media_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>media_name</remote-alias>
+              <ordinal>7</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sk_trackdate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[sk_trackdate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sk_trackdate</remote-alias>
+              <ordinal>8</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>kuartal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[kuartal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>kuartal</remote-alias>
+              <ordinal>9</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tanggal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tanggal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tanggal</remote-alias>
+              <ordinal>10</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bulan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bulan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bulan</remote-alias>
+              <ordinal>11</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tahun_angka</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tahun_angka]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tahun_angka</remote-alias>
+              <ordinal>12</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hari_dalam_bulan_angka</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hari_dalam_bulan_angka]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hari_dalam_bulan_angka</remote-alias>
+              <ordinal>13</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sk_employee</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sk_employee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sk_employee</remote-alias>
+              <ordinal>14</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>employee_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[employee_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>employee_name</remote-alias>
+              <ordinal>15</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sk_customer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sk_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sk_customer</remote-alias>
+              <ordinal>16</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_name</remote-alias>
+              <ordinal>17</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unit_price</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[unit_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unit_price</remote-alias>
+              <ordinal>18</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quantity</remote-alias>
+              <ordinal>19</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>totalrevenue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[totalrevenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>totalrevenue</remote-alias>
+              <ordinal>20</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>billing_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[billing_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>billing_country</remote-alias>
+              <ordinal>21</ordinal>
+              <family>chinook_salesmart.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='chinook_salesmart.csv' id='chinook_salesmart.csv_633D7D1BDB9E49A88CA6CED3386EBACA'>
+            <properties context=''>
+              <relation connection='textscan.0op5h9k1k0u38z15hw3yr147udmi' name='chinook_salesmart.csv' table='[chinook_salesmart#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='id_ID' separator=';'>
+                  <column datatype='integer' name='transaksi_id' ordinal='0' />
+                  <column datatype='integer' name='invoice_line_id' ordinal='1' />
+                  <column datatype='integer' name='invoice_id' ordinal='2' />
+                  <column datatype='integer' name='sk_track' ordinal='3' />
+                  <column datatype='string' name='album_title' ordinal='4' />
+                  <column datatype='string' name='artist_name' ordinal='5' />
+                  <column datatype='string' name='genre_name' ordinal='6' />
+                  <column datatype='string' name='media_name' ordinal='7' />
+                  <column datatype='date' name='sk_trackdate' ordinal='8' />
+                  <column datatype='string' name='kuartal' ordinal='9' />
+                  <column datatype='string' name='tanggal' ordinal='10' />
+                  <column datatype='string' name='bulan' ordinal='11' />
+                  <column datatype='integer' name='tahun_angka' ordinal='12' />
+                  <column datatype='integer' name='hari_dalam_bulan_angka' ordinal='13' />
+                  <column datatype='integer' name='sk_employee' ordinal='14' />
+                  <column datatype='string' name='employee_name' ordinal='15' />
+                  <column datatype='integer' name='sk_customer' ordinal='16' />
+                  <column datatype='string' name='customer_name' ordinal='17' />
+                  <column datatype='string' name='unit_price' ordinal='18' />
+                  <column datatype='integer' name='quantity' ordinal='19' />
+                  <column datatype='string' name='totalrevenue' ordinal='20' />
+                  <column datatype='string' name='billing_country' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Employee Performance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column datatype='string' name='[employee_name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[media_name]' role='dimension' type='nominal' />
+            <column-instance column='[employee_name]' derivation='None' name='[none:employee_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[media_name]' derivation='None' name='[none:media_name:nk]' pivot='key' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:employee_name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e7dd</color>
+                <color>#f1ddc9</color>
+                <color>#f1d3b5</color>
+                <color>#f1c9a1</color>
+                <color>#f1bf8e</color>
+                <color>#f1b57a</color>
+                <color>#f1ab66</color>
+                <color>#f1a152</color>
+                <color>#f1973e</color>
+                <color>#f28e2b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:media_name:nk]' />
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]</rows>
+        <cols>[federated.1c05od61qqttsj17ryebc1rp2iru].[none:employee_name:nk]</cols>
+      </table>
+      <simple-id uuid='{D158508E-351F-474F-96DF-C6CE040FAFF3}' />
+    </worksheet>
+    <worksheet name='Revenue by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column datatype='string' name='[billing_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[billing_country]' derivation='None' name='[none:billing_country:nk]' pivot='key' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[Longitude (generated)]' field-type='quantitative' max='49011569.330959558' min='24278059.684368864' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[Latitude (generated)]' field-type='quantitative' max='2723594.7025823668' min='-12593027.702698266' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e7dd</color>
+                <color>#f1ddc9</color>
+                <color>#f1d3b5</color>
+                <color>#f1c9a1</color>
+                <color>#f1bf8e</color>
+                <color>#f1b57a</color>
+                <color>#f1ab66</color>
+                <color>#f1a152</color>
+                <color>#f1973e</color>
+                <color>#f28e2b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='22' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+              <lod column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:billing_country:nk]' />
+              <geometry column='[federated.1c05od61qqttsj17ryebc1rp2iru].[Geometry (generated)]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c05od61qqttsj17ryebc1rp2iru].[Latitude (generated)]</rows>
+        <cols>[federated.1c05od61qqttsj17ryebc1rp2iru].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4F981447-DD67-43F2-83CE-0BE7058AACA9}' />
+    </worksheet>
+    <worksheet name='Revenue by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column datatype='date' name='[sk_trackdate]' role='dimension' type='quantitative' />
+            <column-instance column='[sk_trackdate]' derivation='Month-Trunc' name='[tmn:sk_trackdate:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[tmn:sk_trackdate:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='22' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='true' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]</rows>
+        <cols>[federated.1c05od61qqttsj17ryebc1rp2iru].[tmn:sk_trackdate:qk]</cols>
+      </table>
+      <simple-id uuid='{3D3D2942-33CD-457B-A9B2-112C90656081}' />
+    </worksheet>
+    <worksheet name='Top Album'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column caption='Total Track Sold ' datatype='integer' name='[Calculation_531987722138017793]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([quantity])' />
+            </column>
+            <column datatype='string' name='[album_title]' role='dimension' type='nominal' />
+            <column-instance column='[album_title]' derivation='None' name='[none:album_title:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_531987722138017793]' derivation='User' name='[usr:Calculation_531987722138017793:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:album_title:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_531987722138017793]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:album_title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:album_title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1c05od61qqttsj17ryebc1rp2iru].[none:album_title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e7dd</color>
+                <color>#f1ddc9</color>
+                <color>#f1d3b5</color>
+                <color>#f1c9a1</color>
+                <color>#f1bf8e</color>
+                <color>#f1b57a</color>
+                <color>#f1ab66</color>
+                <color>#f1a152</color>
+                <color>#f1973e</color>
+                <color>#f28e2b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c05od61qqttsj17ryebc1rp2iru].[none:album_title:nk]</rows>
+        <cols>[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]</cols>
+      </table>
+      <simple-id uuid='{4C944B22-5D53-408B-8C60-2DE2FE972387}' />
+    </worksheet>
+    <worksheet name='Top Artist'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[artist_name]' derivation='None' name='[none:artist_name:nk]' pivot='key' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:artist_name:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_531987722131587072]' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:artist_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:artist_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1c05od61qqttsj17ryebc1rp2iru].[none:artist_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e7dd</color>
+                <color>#f1ddc9</color>
+                <color>#f1d3b5</color>
+                <color>#f1c9a1</color>
+                <color>#f1bf8e</color>
+                <color>#f1b57a</color>
+                <color>#f1ab66</color>
+                <color>#f1a152</color>
+                <color>#f1973e</color>
+                <color>#f28e2b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c05od61qqttsj17ryebc1rp2iru].[none:artist_name:nk]</rows>
+        <cols>[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]</cols>
+      </table>
+      <simple-id uuid='{D9D64DF8-B7AE-4402-9EF1-1E020B285CCB}' />
+    </worksheet>
+    <worksheet name='Top Customer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[customer_name]' derivation='None' name='[none:customer_name:nk]' pivot='key' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:customer_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e7dd</color>
+                <color>#f1ddc9</color>
+                <color>#f1d3b5</color>
+                <color>#f1c9a1</color>
+                <color>#f1bf8e</color>
+                <color>#f1b57a</color>
+                <color>#f1ab66</color>
+                <color>#f1a152</color>
+                <color>#f1973e</color>
+                <color>#f28e2b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c05od61qqttsj17ryebc1rp2iru].[none:customer_name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{08C8ECDB-47D6-497F-9F86-45AA42CFECD9}' />
+    </worksheet>
+    <worksheet name='Top Genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='Total Track Sold ' datatype='integer' name='[Calculation_531987722138017793]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([quantity])' />
+            </column>
+            <column caption='zero' datatype='integer' name='[Calculation_531987722139418626]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='string' name='[genre_name]' role='dimension' type='nominal' />
+            <column-instance column='[genre_name]' derivation='None' name='[none:genre_name:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_531987722139418626]' derivation='Sum' name='[sum:Calculation_531987722139418626:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_531987722138017793]' derivation='User' name='[usr:Calculation_531987722138017793:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:genre_name:nk]' />
+              <wedge-size column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' />
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:genre_name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk] + [federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F27367F5-7CAA-4A26-A34F-C5FE3EC35DB2}' />
+    </worksheet>
+    <worksheet name='Top Media'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='Total Track Sold ' datatype='integer' name='[Calculation_531987722138017793]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([quantity])' />
+            </column>
+            <column caption='zero' datatype='integer' name='[Calculation_531987722139418626]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='string' name='[media_name]' role='dimension' type='nominal' />
+            <column-instance column='[media_name]' derivation='None' name='[none:media_name:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_531987722139418626]' derivation='Sum' name='[sum:Calculation_531987722139418626:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_531987722138017793]' derivation='User' name='[usr:Calculation_531987722138017793:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:media_name:nk]' />
+              <wedge-size column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' />
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:media_name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk] + [federated.1c05od61qqttsj17ryebc1rp2iru].[sum:Calculation_531987722139418626:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AE61E77B-6790-4F31-8592-28C546067E4E}' />
+    </worksheet>
+    <worksheet name='Total Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='total revenue' datatype='real' name='[Calculation_531987722131587072]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([totalrevenue])' />
+            </column>
+            <column datatype='real' datatype-customized='true' name='[totalrevenue]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_531987722131587072]' derivation='User' name='[usr:Calculation_531987722131587072:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='22' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E6D6970F-7CA2-49F5-BAC3-11F7B1C243D7}' />
+    </worksheet>
+    <worksheet name='Total Track Sold'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Times New Roman' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='chinook_salesmart' name='federated.1c05od61qqttsj17ryebc1rp2iru' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c05od61qqttsj17ryebc1rp2iru'>
+            <column caption='Total Track Sold ' datatype='integer' name='[Calculation_531987722138017793]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([quantity])' />
+            </column>
+            <column datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_531987722138017793]' derivation='User' name='[usr:Calculation_531987722138017793:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Snap ITC' />
+            <format attr='color' value='#d3b348' />
+            <format attr='font-size' value='22' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722138017793:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1F737989-3463-43D0-84CB-AE73E83F0D26}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='660' maxwidth='1250' minheight='660' minwidth='1250' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97576' id='62' param='horz' type-v2='layout-flow' w='98720' x='640' y='1212'>
+            <zone h='97576' id='31' type-v2='layout-basic' w='98720' x='640' y='1212'>
+              <zone h='97576' id='3' is-centered='0' is-scaled='1' param='Image/WhatsApp Image 2025-12-12 at 18.33.43.jpeg' type-v2='bitmap' w='98720' x='640' y='1212'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='10303' id='5' param='horz' type-v2='layout-flow' w='93680' x='2720' y='3333'>
+          <zone fixed-size='345' h='10303' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='27600' x='2720' y='3333'>
+            <zone fixed-size='28' forceUpdate='true' h='5454' id='8' is-fixed='true' type-v2='text' w='27600' x='2720' y='3333'>
+              <formatted-text>
+                <run fontcolor='#f9a655' fontname='Times New Roman' fontsize='28'>Cinhook Dashboard</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='331' h='10303' id='7' is-fixed='true' type-v2='empty' w='27120' x='30320' y='3333'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='12879' id='10' param='horz' type-v2='layout-flow' w='21280' x='2160' y='15606'>
+          <zone h='12879' id='11' param='vert' type-v2='layout-flow' w='9120' x='2160' y='15606'>
+            <zone forceUpdate='true' h='3939' id='17' type-v2='text' w='9120' x='2160' y='15606'>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontsize='10'>Total Revenue</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6212' id='14' param='horz' type-v2='layout-flow' w='9120' x='2160' y='19545'>
+              <zone h='6212' id='16' name='Total Revenue' show-title='false' w='9120' x='2160' y='19545'>
+                <layout-cache fixed-size-h='33' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='12879' id='12' type-v2='empty' w='3040' x='11280' y='15606'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='12879' id='13' param='vert' type-v2='layout-flow' w='9120' x='14320' y='15606'>
+            <zone forceUpdate='true' h='3939' id='19' type-v2='text' w='9120' x='14320' y='15606'>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontsize='10'>Total Track Sold</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6212' id='15' param='horz' type-v2='layout-flow' w='9120' x='14320' y='19545'>
+              <zone h='6212' id='18' name='Total Track Sold' show-title='false' w='9120' x='14320' y='19545'>
+                <layout-cache fixed-size-h='33' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+        <zone h='47424' id='20' param='vert' type-v2='layout-flow' w='35600' x='25200' y='15152'>
+          <zone forceUpdate='true' h='5151' id='22' type-v2='text' w='35600' x='25200' y='15152'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='14'>Revenue By Country</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='42273' id='21' param='horz' type-v2='layout-flow' w='35600' x='25200' y='20303'>
+            <zone h='42273' id='23' name='Revenue by Country' show-title='false' w='35600' x='25200' y='20303'>
+              <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+        </zone>
+        <zone h='48030' id='24' param='horz' type-v2='layout-flow' w='36000' x='61520' y='14848'>
+          <zone h='48030' id='25' param='vert' type-v2='layout-flow' w='36000' x='61520' y='14848'>
+            <zone fixed-size='152' h='23030' id='28' is-fixed='true' param='horz' type-v2='layout-flow' w='36000' x='61520' y='14848'>
+              <zone h='23030' id='29' name='Revenue by Month' w='36000' x='61520' y='14848'>
+                <layout-cache minheight='133' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='11' h='2879' id='26' is-fixed='true' type-v2='empty' w='36000' x='61520' y='37878'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='22121' id='27' param='horz' type-v2='layout-flow' w='36000' x='61520' y='40757'>
+              <zone h='22121' id='30' name='Employee Performance' w='36000' x='61520' y='40757'>
+                <layout-cache cell-count-w='3' minheight='173' non-cell-size-w='57' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+        <zone h='31212' id='36' param='vert' type-v2='layout-flow' w='20720' x='2400' y='31212'>
+          <zone h='31210' id='37' name='Top Artist' w='20720' x='2400' y='31212'>
+            <layout-cache cell-count-h='5' non-cell-size-h='33' type-h='cell' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='25455' id='40' param='horz' type-v2='layout-flow' w='94720' x='2480' y='65606'>
+          <zone fixed-size='265' h='25455' id='43' is-fixed='true' param='vert' type-v2='layout-flow' w='21200' x='2480' y='65606'>
+            <zone h='25455' id='49' name='Top Album' w='21200' x='2480' y='65606'>
+              <layout-cache cell-count-h='5' minwidth='200' non-cell-size-h='33' type-h='cell' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='24' h='25455' id='53' is-fixed='true' type-v2='empty' w='2560' x='23680' y='65606'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='277' h='25455' id='50' is-fixed='true' param='vert' type-v2='layout-flow' w='22160' x='26240' y='65606'>
+            <zone h='25455' id='52' name='Top Genre' w='22160' x='26240' y='65606'>
+              <layout-cache cell-count-w='1' minheight='134' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='30' h='25455' id='51' is-fixed='true' type-v2='empty' w='3040' x='48400' y='65606'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='278' h='25455' id='54' is-fixed='true' param='vert' type-v2='layout-flow' w='22240' x='51440' y='65606'>
+            <zone h='25455' id='55' name='Top Media' w='22240' x='51440' y='65606'>
+              <layout-cache cell-count-w='1' minheight='134' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone fixed-size='27' h='25455' id='58' is-fixed='true' type-v2='empty' w='2800' x='73680' y='65606'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='25455' id='59' param='vert' type-v2='layout-flow' w='19760' x='76480' y='65606'>
+            <zone h='25455' id='60' name='Top Customer' w='19760' x='76480' y='65606'>
+              <layout-cache fixed-size-h='1234' fixed-size-w='239' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='70' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97576' id='69' param='vert' type-v2='layout-flow' w='98720' x='640' y='1212'>
+                <zone fixed-size='280' h='97576' id='3' is-centered='0' is-fixed='true' is-scaled='1' param='Image/WhatsApp Image 2025-12-12 at 18.33.43.jpeg' type-v2='bitmap' w='98720' x='640' y='1212'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='28' forceUpdate='true' h='5454' id='8' type-v2='text' w='27600' x='2720' y='3333'>
+                  <formatted-text>
+                    <run fontcolor='#f9a655' fontname='Times New Roman' fontsize='28'>Cinhook Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='23030' id='29' is-fixed='true' name='Revenue by Month' w='36000' x='61520' y='14848'>
+                  <layout-cache minheight='133' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5151' id='22' type-v2='text' w='35600' x='25200' y='15152'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='14'>Revenue By Country</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3939' id='17' type-v2='text' w='9120' x='2160' y='15606'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='10'>Total Revenue</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3939' id='19' type-v2='text' w='9120' x='14320' y='15606'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='10'>Total Track Sold</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='33' h='6212' id='16' is-fixed='true' name='Total Revenue' show-title='false' w='9120' x='2160' y='19545'>
+                  <layout-cache fixed-size-h='33' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='33' h='6212' id='18' is-fixed='true' name='Total Track Sold' show-title='false' w='9120' x='14320' y='19545'>
+                  <layout-cache fixed-size-h='33' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='271' h='42273' id='23' is-fixed='true' name='Revenue by Country' show-title='false' w='35600' x='25200' y='20303'>
+                  <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='198' h='31210' id='37' is-fixed='true' name='Top Artist' w='20720' x='2400' y='31212'>
+                  <layout-cache cell-count-h='5' non-cell-size-h='33' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='138' h='22121' id='30' is-fixed='true' name='Employee Performance' w='36000' x='61520' y='40757'>
+                  <layout-cache cell-count-w='3' minheight='173' non-cell-size-w='57' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='25455' id='49' is-fixed='true' name='Top Album' w='21200' x='2480' y='65606'>
+                  <layout-cache cell-count-h='5' minwidth='200' non-cell-size-h='33' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='25455' id='52' is-fixed='true' name='Top Genre' w='22160' x='26240' y='65606'>
+                  <layout-cache cell-count-w='1' minheight='134' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='25455' id='55' is-fixed='true' name='Top Media' w='22240' x='51440' y='65606'>
+                  <layout-cache cell-count-w='1' minheight='134' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='25455' id='60' is-fixed='true' name='Top Customer' w='19760' x='76480' y='65606'>
+                  <layout-cache fixed-size-h='1234' fixed-size-w='239' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{92D33D8E-8541-4C90-9FD3-14BDE16861C6}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='Total Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84830F17-F19C-4881-96FD-63ADDEB6B9C2}' />
+    </window>
+    <window class='worksheet' name='Revenue by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A939D66D-B5D3-443F-B545-E3C799C01628}' />
+    </window>
+    <window class='worksheet' name='Revenue by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0A1C37BA-2D19-4E35-9C81-469A46C1E5C7}' />
+    </window>
+    <window class='worksheet' name='Total Track Sold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ED083FE1-C34D-4224-806F-226C8C8887F2}' />
+    </window>
+    <window class='worksheet' name='Top Album'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{087F7A99-C619-450F-93A1-E4022A4ECEA7}' />
+    </window>
+    <window class='worksheet' name='Top Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:genre_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F8F841B2-7085-4363-BD26-0E8EBC120ABE}' />
+    </window>
+    <window class='worksheet' name='Top Artist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C2DF8782-F788-4E33-91D1-C49197FFDBF9}' />
+    </window>
+    <window class='worksheet' name='Top Media'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:media_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7176B454-F65F-4803-9CF3-F52D1EE10827}' />
+    </window>
+    <window class='worksheet' name='Top Customer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[usr:Calculation_531987722131587072:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8BE0EE78-3CD8-4904-B9FC-F23676AF1683}' />
+    </window>
+    <window class='worksheet' name='Employee Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1c05od61qqttsj17ryebc1rp2iru].[none:media_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A3290E4-3B7D-4F6F-A880-B9DECA4DBE05}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Employee Performance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Album'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Artist'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Customer' />
+        <viewpoint name='Top Genre'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Media'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Revenue' />
+        <viewpoint name='Total Track Sold' />
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{4BE3326F-055A-446A-B87D-54F4FA3DCB8D}' />
+    </window>
+  </windows>
+</workbook>
